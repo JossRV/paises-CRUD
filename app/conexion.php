@@ -1,6 +1,6 @@
 <?php 
     class Conexion{
-        public function conectar(){
+        static function conectar(){
             $servidor= "localhost";
             $user= "root";
             $pasword= "";
@@ -16,7 +16,7 @@
         }
     }
     // $c = new Conexion();
-    // if($c -> conectar()){
+    // if(Conexion :: conectar()){
     //     echo "conectado pta xd";
     // }
 ?>

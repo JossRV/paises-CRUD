@@ -17,7 +17,7 @@
     if($m -> evitarRepetidos($nombrePais) == 1){
         echo'<script type="text/javascript">
                 alert("Repetido");
-                window.location.href="../index.php";
+                window.location.href="http://localhost/SUITS/listaBuscado-352022/";
             </script>';
     }else if($m -> insertarPais($datos)){
         header("location: ../index.php");

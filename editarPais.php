@@ -3,14 +3,10 @@
     require_once "./model/buscadorPaises.php";
     require_once "./header.php";
 
-    $c = new Conexion();
-    $conectado = $c -> conectar();
-    $m = new metodosLista();
-
     $idPais = $_GET['idPais'];
-    $respuesta = mysqli_query($conectado,"SELECT * FROM v_continente_pais WHERE idPais = '$idPais'");
+    $respuesta = mysqli_query(Conexion :: conectar(), "SELECT * FROM v_continente_pais WHERE idPais = '$idPais'");
     $verPaises = mysqli_fetch_row($respuesta);
-    $mostrarLista = $m -> mostrar("SELECT * FROM t_continente");
+    $mostrarLista = metodosLista :: mostrar("SELECT * FROM t_continente");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -29,6 +25,7 @@
                     <input type="text" name="idPais" hidden value="<?=$idPais?>">
                     <label for="" class="form-label">Selecciona el continente</label>
                     <select name="listaContinentes" id="listaPaises" class="form-select mb-3">
+                        <option value="<?=$verPaises['0']?>"><?=$verPaises['1']?></option>
                         <?php foreach($mostrarLista as $key): ?>
                         <option value="<?=$key['id_continente']?>"><?=$key['nombre']?></option>
                         <?php endforeach ?>
