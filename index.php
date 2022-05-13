@@ -3,8 +3,7 @@
     require_once "./app/conexion.php";
     require_once "./model/buscadorPaises.php";
 
-    $obj = new metodosLista();
-    $mostrarLista = $obj -> mostrar("SELECT * FROM t_continente");
+    $mostrarLista = metodosLista :: mostrar("SELECT * FROM t_continente");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -35,12 +34,12 @@
                         <span class="texto">Todos los paises</span>
                     </a>
                 </li>
-                <!-- <li>
+                <li>
                     <a href="#">
-                        <span class="icono"><i class="fa-duotone fa-gear"></i></span>
-                        <span class="texto">Configuracion</span>
+                        <span class="icono"><i class="fa-duotone fa-earth-americas"></i></span>
+                        <span class="texto">Mapa</span>
                     </a>
-                </li> -->
+                </li>
                 <!-- <li>
                     <a href="#">
                         <span class="icono"><i class="fa-duotone fa-arrow-right-from-bracket"></i></span>

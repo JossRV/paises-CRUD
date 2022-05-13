@@ -2,7 +2,6 @@
     require_once "../app/conexion.php";
     require_once "./buscadorPaises.php";
 
-    $m = new metodosLista();
 
     $idPais = $_POST['idPais'];
     $idContinente = $_POST['listaContinentes'];
@@ -16,7 +15,7 @@
         $bandera
     );
 
-    if($m -> actualizarPais($datos)){
+    if(metodosLista :: actualizarPais($datos)){
         header("location: ../todosPaises.php");
     }else{
         echo "fallo";
