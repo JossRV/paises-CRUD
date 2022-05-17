@@ -192,3 +192,24 @@
     align-items: center;
     font-size: 1.25em;
 }
+.fondoMapa{
+    background: rgb(21, 170, 245);
+}
+.estiloMapa{
+    min-height: 100vh;
+}
+.estiloMapa path{
+    fill: rgb(87, 3, 3);
+    stroke: rgb(19, 18, 18);
+    stroke-width: 4px;
+}
+.estiloMapa path:hover{
+    fill: rgb(218,201,107);
+}
+.listado{
+    background: #fff;
+}
+img{
+    border-radius: 5px;
+    border: 2px solid #000;
+}

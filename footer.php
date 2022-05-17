@@ -8,7 +8,7 @@
 <script src="./packages/dataTables/js/3dataTablesFixedHeader.js"></script>
 <script src="./packages/dataTables/js/4dataTablesResponsive.js"></script>
 <script src="./packages/dataTables/js/5responsiveBootstrap.js"></script>
-<!-- <script src="./packages/dataTables/dataTableEsRes.js"></script> -->
+<script src="./packages/dataTables/dataTableEsRes.js"></script>
 <!-- dep select -->
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="./controller/listaPaises.js"></script>

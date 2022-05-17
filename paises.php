@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./mapaMundi.php">
                         <span class="icono"><i class="fa-duotone fa-earth-americas"></i></span>
                         <span class="texto">Mapa</span>
                     </a>
